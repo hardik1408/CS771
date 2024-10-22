@@ -231,7 +231,6 @@ merged_df = pd.concat([merged_df, chunks_df], axis=1)
 
 merged_df.drop(columns=['input_str'], inplace=True)
 
-
 clf = joblib.load('./models/combined.joblib')
 
 test = merged_df
